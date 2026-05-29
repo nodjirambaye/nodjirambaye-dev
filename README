@@ -1,0 +1,62 @@
+# Nodjirambaye Eric — AI, Economics & Education
+
+> **Using AI, Data & Education to Create Social Impact Across Africa**
+
+## About This Platform
+
+This is the source code for my personal research and portfolio website, built to serve as:
+- A **research hub** for my work on AI, labor markets, and digital policy in West Africa
+- A **technical portfolio** showcasing data science and Python projects
+- An **educational resource** for African students pursuing AI, data science, and international scholarships
+- A **professional identity** connecting my interdisciplinary background in economics, education, and technology
+
+## Who I Am
+
+- **Economist & AI Researcher** — BSc Economics, researching AI's impact on youth employment in Nigeria
+- **Educator** — 10+ years teaching experience, FLE-certified (Institut français), British Council ESL-certified
+- **Data Practitioner** — Python, SQL, data visualization, building tools for low-connectivity environments
+- **Dual Citizen** — Chad & Nigeria, bridging Francophone and Anglophone African perspectives
+
+## Featured Research
+
+| Paper | Status | Journal |
+|-------|--------|---------|
+| *Artificial Intelligence, Youth Employment, and the Digital Divide in Nigeria: A Practitioner-Informed Analysis* | Under Review | OMEE |
+
+## Featured Projects
+
+- **Nigeria Inflation Dashboard** — Interactive visualization of inflation trends (2010–2023)
+- **Offline Voice Assistant** — Python/Kivy Android app for low-connectivity environments
+- **AI Employment Impact Analyzer** — Toolkit supporting OMEE research paper
+- **SQL Case Studies Collection** — Real-world scenarios for data science education
+
+## Learning Hub (Coming Soon)
+
+- Python for Beginners
+- Data Analysis Fundamentals
+- AI Literacy for Everyone
+- SQL for Data Science
+- Research Methods for African Scholars
+- French for Researchers
+
+## Connect
+
+- **Website:** [nodjirambaye.github.io](https://nodjirambaye.github.io) *(or your custom domain)*
+- **GitHub:** [@nodjirambaye](https://github.com/nodjirambaye)
+- **Research:** Google Scholar | ResearchGate *(add links when ready)*
+- **Professional:** LinkedIn *(add link when ready)*
+
+## Tech Stack
+
+- HTML5, CSS3, Vanilla JavaScript
+- Responsive design with CSS Grid & Flexbox
+- No frameworks — lightweight, fast, accessible on low-bandwidth connections
+- Optimized for mobile (critical for African audiences)
+
+## License
+
+MIT License — See [LICENSE](LICENSE) for details.
+
+---
+
+*Built with passion in West Africa. Open to research collaborations, mentorship requests, and partnerships for African AI and education initiatives.*

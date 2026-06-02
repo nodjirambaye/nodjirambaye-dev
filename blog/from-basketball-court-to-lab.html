@@ -1,0 +1,637 @@
+Blog<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From the Basketball Court to the Lab: A Researcher Built on Discipline | Nodjirambaye Eric</title>
+    <meta name="description" content="How a basketball player became a French teacher, then an AI researcher. MS Economics (Data Science) at Northeastern, MS CS at Clark, MS IS at SLU, and PhD at Pitt. A story of discipline, persistence, and building capability against constraints.">
+    <meta name="keywords" content="basketball to researcher, French teacher to AI, MS Economics Data Science, MS Computer Science, PhD Information Science, graduate admissions, career transformation, persistence">
+    <meta name="author" content="Nodjirambaye Penset Eric">
+    <meta property="og:title" content="From the Basketball Court to the Lab: A Researcher Built on Discipline">
+    <meta property="og:description" content="How a basketball player became a French teacher, then an AI researcher. Admitted to Northeastern, BU, Clark, SLU, Pitt, and Catholic University.">
+    <meta property="og:type" content="article">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #1e293b;
+            --accent: #f59e0b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --bg: #0a0e1a;
+            --card: #111827;
+            --border: #1e293b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1rem 5%;
+            background: rgba(10, 14, 26, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent); }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover { color: var(--accent); }
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 8rem 5% 4rem;
+        }
+        .article-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        .article-meta {
+            display: flex;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+        .article-meta span { display: flex; align-items: center; gap: 0.5rem; }
+        .article-tag {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            background: rgba(245, 158, 11, 0.1);
+            color: var(--accent);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        .article-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        .article-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+        .article-content h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 3rem 0 1.5rem;
+            color: var(--accent);
+        }
+        .article-content h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .article-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+        .article-content li {
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+        .highlight-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .highlight-box h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .admission-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.08), rgba(139, 92, 246, 0.08));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .admission-box h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .admission-list {
+            list-style: none;
+            padding: 0;
+        }
+        .admission-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            color: var(--text-muted);
+        }
+        .admission-list li:last-child { border-bottom: none; }
+        .admission-list li i { color: var(--accent); margin-top: 0.25rem; }
+        .admission-list li strong { color: var(--text); }
+        .scholarship-tag {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+        .author-box {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        .author-avatar {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--accent), #ef4444);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+        .author-info h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .author-info p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .share-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        .share-section h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            margin-bottom: 1rem;
+        }
+        .share-links { display: flex; gap: 1rem; }
+        .share-link {
+            width: 48px;
+            height: 48px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .share-link:hover {
+            background: var(--accent);
+            color: var(--primary);
+            border-color: var(--accent);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+        .back-link:hover { gap: 0.75rem; }
+        @media (max-width: 768px) {
+            .article-title { font-size: 1.8rem; }
+            .author-box { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">Nodjirambaye<span>Eric</span></a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="article-container">
+        <a href="../index.html#blog" class="back-link">
+            <i class="fas fa-arrow-left"></i> Back to Blog
+        </a>
+
+        <header class="article-header">
+            <span class="article-tag">Personal Journey</span>
+            <div class="article-meta">
+                <span><i class="fas fa-calendar"></i> June 2026</span>
+                <span><i class="fas fa-clock"></i> 9 min read</span>
+                <span><i class="fas fa-user"></i> Nodjirambaye Eric</span>
+            </div>
+            <h1 class="article-title">From the Basketball Court to the Lab: A Researcher Built on Discipline</h1>
+            <p class="article-subtitle">
+                I learned teamwork on a basketball court, patience in a language classroom, and 
+                persistence in the face of closed doors. Admitted to six graduate programs — including 
+                Northeastern, Boston University, and the University of Pittsburgh — this is how those 
+                three things became a research career, and why I still teach French while studying AI.
+            </p>
+        </header>
+
+        <div class="article-content">
+            <p>
+                I started on a basketball court. Not a research lab, not a coding bootcamp, not a 
+                university lecture hall. A basketball court. I learned something there that I still 
+                use every day: <strong>discipline is not about talent. It is about showing up when the 
+                result is uncertain.</strong> You do not know if the shot will go in. You practice 
+                anyway. That mindset — showing up, iterating, trusting the process — is the only reason 
+                I am a researcher today.
+            </p>
+            <p>
+                After basketball, I found myself in a classroom. But not as a student. As a teacher. 
+                For over <strong>ten years</strong>, I have stood in front of students explaining 
+                economics, mathematics, and eventually programming. And for several of those years, 
+                I have been teaching <strong>French</strong> — a language I learned formally through 
+                certification at the Institut français and refined through advanced study at the Open 
+                University UK. Teaching French taught me something coding never could: <strong>how to 
+                make complex systems feel intuitive to someone who has never encountered them before.</strong> 
+                Every time I explain a neural network to a beginner, I am using the same skill I use 
+                to explain French verb conjugations: breaking the complex into the inevitable.
+            </p>
+            <p>
+                I am still teaching French today — it is my current primary teaching role alongside economics and programming. I do not see it as a side job. I see it as part of 
+                the same mission: <strong>making knowledge accessible to people the system assumes 
+                cannot access it.</strong> The student who struggles with Python syntax and the student 
+                who struggles with French subjunctive are facing the same barrier — not inability, but 
+                exposure. My job is to engineer that exposure.
+            </p>
+
+            <h2>The Pivot: From Chalkboard to Code</h2>
+            <p>
+                My formal training was in economics — a Bachelor of Science that gave me frameworks 
+                but not tools. I could describe market failures. I could not model them. I could 
+                explain inflation. I could not visualize its trajectory across a decade. That gap 
+                between understanding and doing is what drove me to Python, to data science, and 
+                eventually to AI research.
+            </p>
+            <p>
+                The turning point was a single project. In 2023, I analyzed national inflation data 
+                using Python for the first time. Within hours, I built visualizations that would have 
+                taken weeks with traditional methods. I saw policy decisions from 2016 still rippling 
+                through the economy in 2023. And I realized: <strong>my students needed these tools, 
+                not just the theory I was explaining.</strong>
+            </p>
+            <p>
+                That project became the Inflation Dashboard analyzing national economic data. It also became the seed of a 
+                larger question that now drives my research: <em>If AI and automation are reshaping 
+                global labor markets, what happens to young people entering those markets with limited 
+                digital skills?</em> This is not abstract. I have taught students who share one smartphone. 
+                I have mentored graduates who lose remote job opportunities because their internet cannot 
+                sustain a video call. The digital divide is not a concept. It is a daily reality I witness 
+                in classrooms.
+            </p>
+
+            <div class="highlight-box">
+                <h4><i class="fas fa-lightbulb"></i> The Moment Everything Connected</h4>
+                <p>
+                    I was teaching Python to a group of students who shared one laptop among five. 
+                    The lesson was on data visualization. One student, who had never touched a computer 
+                    before the course, created a bar chart showing unemployment rates by sector. 
+                    She looked at the screen and said: "Now I can see what I was only guessing before." 
+                    <br><br>
+                    That sentence — <em>"Now I can see"</em> — is why I research. Data literacy is not 
+                    a career skill. It is a form of sight.
+                </p>
+            </div>
+
+            <h2>What I Built: Credentials That Bridge Theory and Practice</h2>
+            <p>
+                Teaching showed me the problems. Formal training gave me the methods to solve them. 
+                Over the past two years, I pursued four credentials that transformed what I could offer 
+                students, collaborators, and the research community:
+            </p>
+            <ul>
+                <li>
+                    <strong>Foundations of Responsible AI</strong> at Northeastern University — Ethics 
+                    as design principle, not afterthought. Essential when your research affects vulnerable 
+                    populations.
+                </li>
+                <li>
+                    <strong>Data Science Bootcamp</strong> at AI Planet — Practical Python, machine 
+                    learning, and visualization. Skills I now teach and expand in my own courses.
+                </li>
+                <li>
+                    <strong>Associate Degree in Computer Science</strong> at University of the People 
+                    (in progress) — Formal CS foundations to complement economics background. Expected 
+                    completion 2026–2027.
+                </li>
+                <li>
+                    <strong>FLE & ESL Teaching Certificates</strong> from Institut français and British 
+                    Council — Pedagogical training that shapes how I design courses for diverse learners.
+                </li>
+            </ul>
+            <p>
+                Each credential was earned while teaching full-time — French in the mornings, 
+                economics and programming in the afternoons, my own coursework at night. The 
+                discipline I learned on the basketball court is the only reason this schedule 
+                is possible. You do not manage that load through motivation. You manage it through 
+                routine.
+            </p>
+
+            <h2>The Doors That Opened — And the One That Did Not</h2>
+            <p>
+                In 2025, I did something that felt impossible: I applied to graduate programs in the 
+                United States. My background was unconventional — economics, teaching, self-taught 
+                programming, online certifications, a decade in classrooms rather than labs. I 
+                prepared my statements, gathered recommendations, and submitted applications without 
+                knowing if admissions committees would see value in a path that did not fit their 
+                typical template.
+            </p>
+            <p>
+                They did. The responses came back, and they were not rejections. They were invitations 
+                — with funding, with recognition, with validation that a decade of teaching and 
+                self-directed learning could compete with traditional pipelines.
+            </p>
+
+            <div class="admission-box">
+                <h4><i class="fas fa-university"></i> Graduate Admissions & Scholarships (Fall 2025)</h4>
+                <ul class="admission-list">
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Northeastern University</strong> — MS Economics with concentration in Data Science
+                            <span class="scholarship-tag">50% Scholarship</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Clark University</strong> — MS Computer Science
+                            <span class="scholarship-tag">25% Scholarship</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Boston University</strong> — MS Computer Science
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <strong>Saint Louis University (SLU)</strong> — MS Information Systems
+                            <span class="scholarship-tag">$3,400 per term</span>
+                        </div>
+                    </li>
+                </ul>
+                <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+                    <i class="fas fa-info-circle" style="color: var(--accent);"></i> 
+                    <strong>Note:</strong> Unable to attend due to travel documentation constraints. 
+                    Pursuing alternative pathways and reapplying for subsequent terms.
+                </p>
+            </div>
+
+            <p>
+                I could not attend. Travel documentation constraints — a bureaucratic wall I could 
+                not code around, could not teach through, could not visualize away. I watched peers 
+                with fewer credentials board planes while I stayed behind. That is a specific kind of 
+                frustration: knowing you are capable, knowing you are admitted, knowing you have 
+                partial funding, and still being stopped by a stamp you cannot control.
+            </p>
+            <p>
+                But here is what basketball taught me: <strong>you do not stop playing because the 
+                shot was blocked. You adjust your position and take the next one.</strong>
+            </p>
+            <p>
+                I applied again for Fall 2026. I refined my statements, strengthened my research 
+                profile, and submitted to programs that valued interdisciplinary backgrounds. And the 
+                doors opened wider:
+            </p>
+
+            <div class="admission-box">
+                <h4><i class="fas fa-graduation-cap"></i> Graduate Admissions (Fall 2026)</h4>
+                <ul class="admission-list">
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <strong>University of Pittsburgh</strong> — PhD in Information Science
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <div>
+                            <strong>Catholic University of America</strong> — MS in Data Analytics
+                        </div>
+                    </li>
+                </ul>
+                <p style="margin-top: 1.5rem; color: var(--text-muted); font-size: 0.95rem;">
+                    <i class="fas fa-clock" style="color: var(--accent);"></i> 
+                    <strong>Status:</strong> Awaiting resolution of travel documentation constraints. 
+                    Continuing research, teaching, and coursework in the interim.
+                </p>
+            </div>
+
+            <p>
+                I am still waiting. The documentation issue is not resolved. But I am not waiting 
+                passively. I am teaching French. I am completing my UoPeople degree. I am submitting 
+                my OMEE paper. I am building this platform. I am doing what I have always done: 
+                <strong>showing up and working while the outcome is uncertain.</strong>
+            </p>
+
+            <h2>What I Research: The Question From the Classroom</h2>
+            <p>
+                My current paper, <em>"Artificial Intelligence, Youth Employment, and the Digital 
+                Divide: A Practitioner-Informed Analysis,"</em> submitted to the <strong>OMEE</strong> 
+                journal, is the direct result of this trajectory. The term "practitioner-informed" 
+                is deliberate — it means the research is grounded in classrooms and job markets I have 
+                personally witnessed, not abstract theory I read in a library.
+            </p>
+            <p>
+                The paper asks: <strong>As AI automates jobs globally, what happens to young people 
+                entering the labor market with limited digital skills?</strong> I have taught these 
+                students. I have watched them graduate into economies that demand skills their schools 
+                never taught. I have mentored them through scholarship applications they should not have 
+                to navigate alone. This research is not about them. It is <em>for</em> them.
+            </p>
+            <p>
+                My argument is simple and hard: AI policy for developing economies cannot import 
+                frameworks from technology hubs. It must account for infrastructure gaps, educational 
+                disparities, and the reality that the world's youngest population will be concentrated 
+                in regions with the least digital access. <strong>We are not preparing for a distant 
+                future. We are living it now.</strong>
+            </p>
+
+            <h2>What I Can Do: Capabilities Built on Three Fields</h2>
+            <p>
+                I do not fit neatly into one category. I am not just an economist, not just a programmer, 
+                not just a teacher, not just a researcher. I am someone who moves between those roles 
+                because the problems I care about require all of them. Here is what I bring:
+            </p>
+            <ul>
+                <li>
+                    <strong>Research design & analysis:</strong> Econometric frameworks, data visualization, 
+                    Python-based statistical analysis, and policy-relevant interpretation for resource-constrained contexts
+                </li>
+                <li>
+                    <strong>Teaching & curriculum development:</strong> 10+ years designing courses for 
+                    low-connectivity environments, from French language to Python programming to research methods
+                </li>
+                <li>
+                    <strong>Cross-cultural collaboration:</strong> Advanced French (FLE-certified) and English 
+                    (ESL-certified), enabling work across diverse research and educational ecosystems
+                </li>
+                <li>
+                    <strong>Ethical AI application:</strong> Northeastern certification in responsible AI, 
+                    ensuring research and tools are designed with equity as core principle
+                </li>
+                <li>
+                    <strong>Scholarship navigation:</strong> Deep research into international education 
+                    pathways and the specific challenges underrepresented applicants face — informed by 
+                    personal experience
+                </li>
+            </ul>
+
+            <h2>What I Believe: The Mission</h2>
+            <p>
+                I believe the distance between where a student starts and where they can go is measured 
+                not in geography or income, but in <strong>access to knowledge and tools</strong>. I believe 
+                a student with limited connectivity can access the same AI education as a student in a 
+                well-equipped lab — if the education is designed for their reality. I believe a researcher 
+                from any background can contribute to global conversations on AI and employment, if the 
+                systems are built to include them.
+            </p>
+            <p>
+                I believe in showing up. I learned that on a basketball court, refined it in classrooms 
+                teaching French and economics, and apply it every day in my research and my own 
+                education. The shot may not go in. The documentation may not arrive. The paper may be 
+                rejected. But the discipline of preparation is never wasted. It compounds. It builds 
+                capability that outlasts any single outcome.
+            </p>
+
+            <blockquote>
+                "I am a basketball player who became a French teacher, who became an economics instructor, 
+                who became a Python programmer, who became an AI researcher. The thread is not talent. 
+                The thread is discipline. The thread is showing up. The thread is refusing to let a closed 
+                door be the end of the story."
+            </blockquote>
+
+            <h2>What Comes Next</h2>
+            <p>
+                My immediate priorities are completing my <strong>Associate Degree in Computer Science 
+                at UoPeople</strong>, securing publication of my OMEE paper, and resolving the documentation 
+                constraints that stand between me and my PhD at the University of Pittsburgh. Beyond that, 
+                I am actively pursuing <strong>MS/PhD opportunities</strong> that value interdisciplinary 
+                research with demonstrable social impact.
+            </p>
+            <p>
+                But my larger vision is unchanged: <strong>a world where students are not passive 
+                recipients of technological change, but active architects of it.</strong> Where a learner 
+                with limited resources can access the same analytical tools as anyone. Where a researcher 
+                from any background can contribute to global conversations on AI and employment. Where 
+                a closed door is a detour, not a destination.
+            </p>
+            <p>
+                That vision requires collaborators, mentors, and partners. If you are building something 
+                aligned with it — in research, education, or policy — I want to hear from you. I am still 
+                teaching French. I am still coding at night. I am still showing up. And I am still taking 
+                the next shot.
+            </p>
+
+            <div class="highlight-box">
+                <h4><i class="fas fa-handshake"></i> Work With Me</h4>
+                <p>
+                    <strong>Research collaborations:</strong> AI and labor markets, digital divide, EdTech, 
+                    financial inclusion.<br><br>
+                    <strong>Mentorship:</strong> Limited slots for students applying to MS/PhD programs in 
+                    AI, data science, economics, and education.<br><br>
+                    <strong>Speaking & workshops:</strong> Python education, research methods, scholarship 
+                    strategies, French for academic contexts.<br><br>
+                    <strong>Contact:</strong> <a href="mailto:penseteric@gmail.com" style="color: var(--accent);">penseteric@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="author-box">
+            <div class="author-avatar">NE</div>
+            <div class="author-info">
+                <h4>Nodjirambaye Penset Eric</h4>
+                <p>AI Researcher, Economist & Educator | BSc Economics | UoPeople CS (in progress) | Northeastern Responsible AI | AI Planet Data Science | FLE & ESL Certified | Admitted to Northeastern (MS Econ-DS), BU (MS CS), Clark (MS CS), SLU (MS IS), Pitt (PhD IS), Catholic University (MS DA) | 10+ years teaching French, economics, and programming</p>
+            </div>
+        </div>
+
+        <div class="share-section">
+            <h4>Share this article</h4>
+            <div class="share-links">
+                <a href="https://twitter.com/intent/tweet?text=From%20the%20Basketball%20Court%20to%20the%20Lab%20-%20admitted%20to%20Northeastern%2C%20BU%2C%20Clark%2C%20SLU%2C%20Pitt%2C%20and%20Catholic%20University%20by%20%40nodjirambaye" target="_blank" class="share-link" title="Share on Twitter/X"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nodjirambaye.github.io/blog/from-basketball-court-to-lab" target="_blank" class="share-link" title="Share on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://nodjirambaye.github.io/blog/from-basketball-court-to-lab" target="_blank" class="share-link" title="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:?subject=From%20the%20Basketball%20Court%20to%20the%20Lab&body=I%20thought%20you%20would%20enjoy%20this%20article:%20https://nodjirambaye.github.io/blog/from-basketball-court-to-lab" class="share-link" title="Share via Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
